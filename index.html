@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Page Task Manager</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Landing Page Task Manager</h1>
+</header>
+
+<main>
+  <section id="tasks">
+    <h2>Task List</h2>
+    <ul id="task-list">
+      <!-- Tasks will be dynamically added here using JavaScript -->
+    </ul>
+    <form id="task-form">
+      <h3>Add New Task</h3>
+      <input type="text" id="task-name" placeholder="Task Name" required>
+      <input type="text" id="task-deadline" placeholder="Deadline (e.g., February 20th)" required>
+      <select id="task-priority" required>
+        <option value="" disabled selected>Select Priority</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+      <input type="text" id="task-label" placeholder="Label" required>
+      <button type="submit">Add Task</button>
+    </form>
+  </section>
+</main>
+
+<script src="css/javascript/script.js"></script>
+</body>
+</html>
+
